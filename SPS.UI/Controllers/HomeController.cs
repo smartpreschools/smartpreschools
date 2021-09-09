@@ -28,6 +28,11 @@ namespace SPS.UI.Controllers
             return View();
         }
 
+        public ActionResult Menu()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
