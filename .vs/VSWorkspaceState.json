@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SPS.UI",
+    "\\SPS.UI\\Controllers"
   ],
+  "SelectedNode": "\\SPS.UI\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }
