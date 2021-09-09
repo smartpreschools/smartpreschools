@@ -8,8 +8,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 
 
+=======
+/// <summary>
+/// code
+/// </summary>
+>>>>>>> 46897011d3890dc8baf29eca45959d6c8a3b8efa
 namespace SPS.UI
 {
     public class Startup
