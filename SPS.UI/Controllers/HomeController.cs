@@ -29,7 +29,8 @@ namespace SPS.UI.Controllers
         }
 
         public ActionResult Menu()
-        {
+        { 
+            //
             return View();
         }
 
