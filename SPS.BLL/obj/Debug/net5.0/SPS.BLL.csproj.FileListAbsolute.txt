@@ -1,0 +1,12 @@
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\bin\Debug\net5.0\SPS.BLL.deps.json
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\bin\Debug\net5.0\SPS.BLL.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\bin\Debug\net5.0\ref\SPS.BLL.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\bin\Debug\net5.0\SPS.BLL.pdb
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\obj\Debug\net5.0\SPS.BLL.csprojAssemblyReference.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\obj\Debug\net5.0\SPS.BLL.GeneratedMSBuildEditorConfig.editorconfig
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\obj\Debug\net5.0\SPS.BLL.AssemblyInfoInputs.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\obj\Debug\net5.0\SPS.BLL.AssemblyInfo.cs
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\obj\Debug\net5.0\SPS.BLL.csproj.CoreCompileInputs.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\obj\Debug\net5.0\SPS.BLL.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\obj\Debug\net5.0\ref\SPS.BLL.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.BLL\obj\Debug\net5.0\SPS.BLL.pdb
