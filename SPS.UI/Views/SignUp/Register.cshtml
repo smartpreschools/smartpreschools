@@ -5,75 +5,155 @@
 }
 
 
-<div class="wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>Register</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Smart PreSchool</a></li>
-                        <li class="breadcrumb-item active">Register</li>
-                    </ol>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
-    </section>
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <form method="post" enctype="multipart/form-data" asp-controller="SignUp" asp-action="Register">
-                        <div class="card card-info">
-                            <div class="card-header">
-                                <h3 class="card-title">Register Here..</h3>
-                            </div>
-                            <!-- /.card-header -->
-                            <!-- form start -->
-                            <div class="card-body">
-                                <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                    <div class="col-sm-5">
-                                        <input type="email" class="form-control" id="txtuserName" placeholder="Email" name="UserName" required>
-                                    </div>
-                                    <span id="errtxtuserName" class="err-msg"></span>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                    <div class="col-sm-5">
-                                        <input type="password" class="form-control" id="txtpassword" placeholder="Password" name="Password" required>
-                                    </div>
-                                    <span id="errtxtpassword" class="err-msg"></span>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Role</label>
-                                    <div class="col-sm-5">
-                                        <select id="ddlRole" class="form-control" required name="Role">
-                                            <option value="">Select</option>
-                                            <option value="Admin">Admin</option>
-                                            <option value="NGO">Technician</option>
-                                            <option value="User">User</option>
+<br />
 
-                                        </select>
-                                    </div>
-                                    <span id="errtxtpassword" class="err-msg"></span>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">School Registration</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>School Name : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtSchoolName" placeholder="School Name" msg-value="school name" required>
+                                    <span id="errtxtSchoolName" class="hidden-span text-danger"></span>
                                 </div>
                             </div>
-                            <!-- /.card-body -->
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-info" id="btnlogin"> Sign in</button>
-                                <button type="submit" class="btn btn-secondary">Cancel</button>
-
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>School Address : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtSchoolAddress" placeholder="School Address" msg-value="school address" required>
+                                    <span id="errtxtAddress" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Registerd Email : <em class="text-danger">*</em> </label>
+                                    <input type="email" class="form-control" id="txtEmail" placeholder="Email" msg-value="email" required>
+                                    <span id="errtxtEmail" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Mobile : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtMobile" placeholder="Mobile" msg-value="mobile" required>
+                                    <span id="errtxtMobile" class="hidden-span text-danger"></span>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Website :  </label>
+                                    <input type="text" class="form-control" id="txtWebsite" placeholder="Website" msg-value="website">
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Contact Name : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtContactName" placeholder="Contact Name" msg-value="contact name" required>
+                                    <span id="errtxtContactName" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Contact Email : <em class="text-danger">*</em> </label>
+                                    <input type="email" class="form-control" id="txtContactEmail" placeholder="Conatc Email" msg-value="conatc email" required>
+                                    <span id="errtxtContactEmail" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Conatct Mobile : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtConatctMobile" placeholder="Conatc Mobile" msg-value="conatct mobile" required>
+                                    <span id="errtxtConatctMobile" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Country:  <em class="text-danger">*</em> </label>
+                                    <select id="ddlCountry" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlCountry" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>State:  <em class="text-danger">*</em> </label>
+                                    <select id="ddlState" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlState" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>District:  <em class="text-danger">*</em> </label>
+                                    <select id="ddlDistrict" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlDistrict" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Taluka:  <em class="text-danger">*</em> </label>
+                                    <select id="ddlTaluka" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlTaluka" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>City/Village:  <em class="text-danger">*</em> </label>
+                                    <select id="ddlCity" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlCity" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>User Name : <em class="text-danger">*</em> </label>
+                                    <input type="email" class="form-control" id="txtUserName" placeholder="User Name" msg-value="user name" required>
+                                    <span id="errtxtUserName" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Password : <em class="text-danger">*</em> </label>
+                                    <input type="password" class="form-control" id="txtPassword" placeholder="Password" msg-value="password" required>
+                                    <span id="errtxtPassword" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Description :  </label>
+                                  <textarea placeholder="Description" class="form-control" id="txtDescription" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-</div>
-
+    </div>
+</section>
