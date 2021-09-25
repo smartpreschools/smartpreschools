@@ -18,5 +18,17 @@ namespace SPS.UI.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Login(String UserName, string Password)
+        {
+            if (UserName.ToLower() == "po" && Password.ToLower() == "po")
+            {
+                return RedirectToAction("Index", "Dashboard", new { area = "ProductOwner" });
+            }
+            else
+            {
+                return Json("Invalid Credentials");
+            }
+        }
     }
 }

@@ -48,6 +48,11 @@ namespace SPS.UI
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapAreaControllerRoute(
+                 name: "ProductOwner",
+                 areaName: "ProductOwner",
+                 pattern: "ProductOwner/{controller=Dashboard}/{action=Index}");
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Auth}/{action=Login}/{id?}");
