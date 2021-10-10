@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SPS.UI.Areas.ProductOwner.Controllers
 {
+    [Area("ProductOwner")]
     public class Dashboard : Controller
     {
         public IActionResult Index()
