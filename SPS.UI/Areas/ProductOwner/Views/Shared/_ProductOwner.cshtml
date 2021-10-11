@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -30,7 +32,7 @@
         </nav>
         <!-- /.navbar -->
         <!-- Main Sidebar Container -->
-         <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a asp-controller="Auth" asp-action="Login" class="brand-link">
 
@@ -107,7 +109,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="ProductOwner/Master/Country" class="nav-link">
+                                <a asp-area="ProductOwner" asp-controller="MasterData" asp-action="Country" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Country</p>
                                 </a>
@@ -115,7 +117,7 @@
                         </ul>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="ProductOwner/Master/State" class="brand-link">
+                                <a asp-area="ProductOwner" asp-controller="MasterData" asp-action="State" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>State</p>
                                 </a>
@@ -243,4 +245,3 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-     

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace SPS.UI.Areas.ProductOwner.Controllers
 {
 
+    [Area("ProductOwner")]
     public class MasterData : Controller
     {
         public IActionResult Country()
