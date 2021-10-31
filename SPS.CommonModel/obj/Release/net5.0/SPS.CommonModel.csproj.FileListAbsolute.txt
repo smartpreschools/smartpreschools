@@ -1,0 +1,12 @@
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\bin\Release\net5.0\SPS.CommonModel.deps.json
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\bin\Release\net5.0\SPS.CommonModel.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\bin\Release\net5.0\ref\SPS.CommonModel.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\bin\Release\net5.0\SPS.CommonModel.pdb
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\obj\Release\net5.0\SPS.CommonModel.csprojAssemblyReference.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\obj\Release\net5.0\SPS.CommonModel.GeneratedMSBuildEditorConfig.editorconfig
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\obj\Release\net5.0\SPS.CommonModel.AssemblyInfoInputs.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\obj\Release\net5.0\SPS.CommonModel.AssemblyInfo.cs
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\obj\Release\net5.0\SPS.CommonModel.csproj.CoreCompileInputs.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\obj\Release\net5.0\SPS.CommonModel.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\obj\Release\net5.0\ref\SPS.CommonModel.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.CommonModel\obj\Release\net5.0\SPS.CommonModel.pdb

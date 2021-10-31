@@ -1,0 +1,15 @@
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\bin\Release\net5.0\SPS.IDataLogicLayer.deps.json
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\bin\Release\net5.0\SPS.IDataLogicLayer.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\bin\Release\net5.0\ref\SPS.IDataLogicLayer.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\bin\Release\net5.0\SPS.IDataLogicLayer.pdb
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\bin\Release\net5.0\SPS.CommonModel.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\bin\Release\net5.0\SPS.CommonModel.pdb
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\SPS.IDataLogicLayer.csprojAssemblyReference.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\SPS.IDataLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\SPS.IDataLogicLayer.AssemblyInfoInputs.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\SPS.IDataLogicLayer.AssemblyInfo.cs
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\SPS.IDataLogicLayer.csproj.CoreCompileInputs.cache
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\SPS.IDataLogicLayer.csproj.CopyComplete
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\SPS.IDataLogicLayer.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\ref\SPS.IDataLogicLayer.dll
+F:\SAAS\Smart Preschool\Code\smartpreschools\SPS.IDataLogicLayer\obj\Release\net5.0\SPS.IDataLogicLayer.pdb

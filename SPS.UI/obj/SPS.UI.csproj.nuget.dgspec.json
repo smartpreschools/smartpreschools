@@ -4,14 +4,81 @@
     "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.UI\\SPS.UI.csproj": {}
   },
   "projects": {
-    "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BLL\\SPS.BLL.csproj": {
+    "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BusinessLogicLayer\\SPS.BusinessLogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BLL\\SPS.BLL.csproj",
-        "projectName": "SPS.BLL",
-        "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BLL\\SPS.BLL.csproj",
+        "projectUniqueName": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BusinessLogicLayer\\SPS.BusinessLogicLayer.csproj",
+        "projectName": "SPS.BusinessLogicLayer",
+        "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BusinessLogicLayer\\SPS.BusinessLogicLayer.csproj",
         "packagesPath": "C:\\Users\\Sourabh\\.nuget\\packages\\",
-        "outputPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BLL\\obj\\",
+        "outputPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BusinessLogicLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sourabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj": {
+                "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj"
+              },
+              "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.DataLogicLayer\\SPS.DataLogicLayer.csproj": {
+                "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.DataLogicLayer\\SPS.DataLogicLayer.csproj"
+              },
+              "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.IDataLogicLayer\\SPS.IDataLogicLayer.csproj": {
+                "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.IDataLogicLayer\\SPS.IDataLogicLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj",
+        "projectName": "SPS.CommonModel",
+        "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj",
+        "packagesPath": "C:\\Users\\Sourabh\\.nuget\\packages\\",
+        "outputPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -57,7 +124,139 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.DataLogicLayer\\SPS.DataLogicLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.DataLogicLayer\\SPS.DataLogicLayer.csproj",
+        "projectName": "SPS.DataLogicLayer",
+        "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.DataLogicLayer\\SPS.DataLogicLayer.csproj",
+        "packagesPath": "C:\\Users\\Sourabh\\.nuget\\packages\\",
+        "outputPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.DataLogicLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sourabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.IDataLogicLayer\\SPS.IDataLogicLayer.csproj": {
+                "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.IDataLogicLayer\\SPS.IDataLogicLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.IDataLogicLayer\\SPS.IDataLogicLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.IDataLogicLayer\\SPS.IDataLogicLayer.csproj",
+        "projectName": "SPS.IDataLogicLayer",
+        "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.IDataLogicLayer\\SPS.IDataLogicLayer.csproj",
+        "packagesPath": "C:\\Users\\Sourabh\\.nuget\\packages\\",
+        "outputPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.IDataLogicLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Sourabh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj": {
+                "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -88,8 +287,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BLL\\SPS.BLL.csproj": {
-                "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BLL\\SPS.BLL.csproj"
+              "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BusinessLogicLayer\\SPS.BusinessLogicLayer.csproj": {
+                "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.BusinessLogicLayer\\SPS.BusinessLogicLayer.csproj"
+              },
+              "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj": {
+                "projectPath": "F:\\SAAS\\Smart Preschool\\Code\\smartpreschools\\SPS.CommonModel\\SPS.CommonModel.csproj"
               }
             }
           }
@@ -104,6 +306,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -127,7 +333,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
         }
       }
     }
