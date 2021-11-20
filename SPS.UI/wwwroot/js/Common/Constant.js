@@ -8,12 +8,15 @@
 var Constant = (function Constant() {
     'use strict';
     var contentType = 'application/json; charset=utf-8';
+    var contentTypeXML = 'application/xml; charset=utf-8';
     var urlPrefix = window.location.origin + '/SPS';
     var dataType = "json";
-
+    var secretKey="SmartPreSchool@3456"
     return {
         contentType: contentType,
         urlPrefix: urlPrefix,
-        dataType: dataType
+        dataType: dataType,
+        contentTypeXML: contentTypeXML,
+        secretKey: secretKey
     }
 })();

@@ -31,11 +31,9 @@ namespace SPS.UI.Areas.ProductOwner.Controllers
         {
             if (ModelState.IsValid)
             {
-
                 countryModel.CreatedBy = Guid.NewGuid();
                 countryModel.CountryDescription = "test";
-                countryBLLObj.AddCountry(countryModel);
-                return Json(1);
+                return Json(countryBLLObj.AddCountry(countryModel););
             }
             else
             {

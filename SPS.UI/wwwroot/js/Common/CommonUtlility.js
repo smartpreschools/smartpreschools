@@ -80,6 +80,7 @@
 
     var InfoMessagePopUp = function (msg) {
         $("#modal-info").modal('show');
+
         $("#popupmsg").html(msg);
     }
     var WarningMessagePopUp = function (msg) {

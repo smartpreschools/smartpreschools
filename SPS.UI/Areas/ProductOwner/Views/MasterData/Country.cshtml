@@ -4,101 +4,74 @@
     ViewData["Title"] = "Country";
     Layout = "~/Areas/ProductOwner/Views/Shared/_ProductOwner.cshtml";
 }
+
+
+
+
 <br />
-
-
-
-<div class="wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>Login</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Smart PreSchool</a></li>
-                        <li class="breadcrumb-item active">Login</li>
-                    </ol>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
-    </section>
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-
-                    <div class="card card-info">
-                        <div class="card-header">
-                            <h3 class="card-title">Country Masterr</h3>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title"> Add Country</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Country Name :  <em class="text-danger">*</em>  </label>
+                            <input type="text" class="form-control" id="txtCountryName" placeholder="Country Name" msg-value="country name" required>
+                            <span id="errtxtCountryName" class="hidden-span text-danger"></span>
                         </div>
-                        <!-- /.card-header -->
-                        <!-- form start -->
-                        <div class="card-body">
-                            <div class="form-group row">
-                                <label for="inputEmail3" class="col-sm-2 col-form-label">Country Name</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="CountryName" class="form-control" id="txtCountryName" placeholder="Country Name" msg-value="country name" required>
-                                    <span id="errtxtCountryName" class="hidden-span text-danger"></span>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="inputPassword3" class="col-sm-2 col-form-label">Status</label>
-                                <div class="col-sm-10">
-                                    <select id="ddlRole" class="form-control" required name="Role">
-                                        <option value="0">Select</option>
-                                        <option value="true">Active</option>
-                                        <option value="true">InActive</option>
-                                    </select>
-                                </div>
-
-                            </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Description : </label>
+                            <textarea class="form-control" rows="3" placeholder="Enter ..." maxlength="250" id="txtCountryDesc"></textarea>
                         </div>
-                        <!-- /.card-body -->
-                        <div class="card-footer">
-                            <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
-                            <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
-
+                        <div>
+                            <label>Status</label>
+                            <select class="form-control" id="ddlCountryStatus">
+                                <option value="True">Active</option>
+                                <option value="False">InActive</option>
+                            </select>
                         </div>
-                        <!-- /.card-footer -->
                     </div>
 
-                </div>
-
-
-
-                <!-- /.col -->
-                <!-- /.col -->
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header p-2">
-                            <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link active" href="#timeline" data-toggle="tab">Country List</a></li>
-                            </ul>
-                        </div><!-- /.card-header -->
-                        <div class="card-body">
-                            <div class="tab-content">
-
-
-                            </div>
-                            <!-- /.tab-content -->
-                        </div><!-- /.card-body -->
+                    <div class="card-footer">
+                        <input type="hidden" id="hdnCountryID">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
                     </div>
-                    <!-- /.nav-tabs-custom -->
                 </div>
-                <!-- /.col -->
             </div>
-        </div><!-- /.container-fluid -->
-        <div id="divcategory">
+
+            <div class="col-md-6">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Country List</h3>
+                    </div>
+                    <div class="card-body">
+                        <table id="countrylist" class="table table-bordered" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>Country Name</th>
+                                    <th>Country Description</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <!-- /.content -->
-</div>
-<script src="~/lib/jquery/dist/jquery.js"></script>
+    </div>
+</section>
+
 <script src="~/js/Common/CommonUtlility.js"></script>
 <script src="~/js/Common/Constant.js"></script>
+<script src="~/js/Common/CommonValidation.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/js/ProductOwner/Country.js"></script>
