@@ -26,9 +26,8 @@ namespace SPS.UI.Controllers
             //Need DB 
             if (UserName.ToLower() == "po" && Password.ToLower() == "po")
             {
-                UserInformationModel userInformationModelobj = new UserInformationModel();
-                userInformationModelobj.UserId = "E47B1349-6CEB 4ED6-B4AE-36EDAE1B57F3";
-                return RedirectToAction("Index", "Dashboard", new { area = "ProductOwner" });
+                UserInformationModel.UserId = "a04edc2b-46fb-4997-9896-a311c27fc95e";
+                return RedirectToAction("Index", "Dashboard", new { area = "ProductAdmin" });
             }
             else
             {

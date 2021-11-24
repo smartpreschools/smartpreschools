@@ -16,11 +16,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Open.Serialization.Json.Newtonsoft" Version="2.3.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\ProductOwner\Data\" />
-    <Folder Include="Areas\ProductOwner\Models\" />
+    <Folder Include="Areas\ProductAdmin\Data\" />
+    <Folder Include="Areas\ProductAdmin\Models\" />
     <Folder Include="Areas\Teacher\Controllers\" />
     <Folder Include="Areas\Teacher\Data\" />
     <Folder Include="Areas\Teacher\Models\" />

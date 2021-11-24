@@ -1,0 +1,169 @@
+﻿
+@{
+    ViewData["Title"] = "BusinessHead";
+    Layout = "~/Areas/ProducAdmin/Views/Shared/_ProductOwner.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Business Head Details</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Name : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtName" placeholder="Name" msg-value="name" required>
+                                    <span id="errtxtName" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Address : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtAddress" placeholder="Address" msg-value="address" required>
+                                    <span id="errtxtAddress" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Email : <em class="text-danger">*</em> </label>
+                                    <input type="email" class="form-control" id="txtEmail" placeholder="Email" msg-value="email" required>
+                                    <span id="errtxtEmail" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Mobile : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtMobile" placeholder="Mobile" msg-value="mobile" required>
+                                    <span id="errtxtMobile" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Experience :  <em class="text-danger">*</em></label>
+                                    <input type="text" class="form-control" id="txtExperience" placeholder="Experience" msg-value="experience">
+                                    <span id="errtxtExperience" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Education : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtEducation" placeholder="Education" msg-value="education" required>
+                                    <span id="errtxtEducation" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Country :  <em class="text-danger">*</em> </label>
+                                    <select id="ddlCountry" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlCountry" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>State :  <em class="text-danger">*</em> </label>
+                                    <select id="ddlState" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlState" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>District :  <em class="text-danger">*</em> </label>
+                                    <select id="ddlDistrict" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlDistrict" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                            <div class="form-group">
+                                 <label>Taluka :  <em class="text-danger">*</em> </label>
+                                    <select id="ddlTaluka" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlTaluka" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>                        
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>City/Village :  <em class="text-danger">*</em> </label>
+                                    <select id="ddlCity" class="form-control" required>
+                                        <option value="">Select</option>
+                                    </select>
+                                    <span id="errddlCity" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Status :  <em class="text-danger">*</em> </label>
+                                    <select id="ddlStatus" class="form-control" required>
+                                        <option value="">Select</option>
+                                        <option value="active">Active</option>
+                                        <option value="inactive">Inactive</option>
+                                    </select>
+                                    <span id="errddlStatus" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>User Name : <em class="text-danger">*</em> </label>
+                                    <input type="email" class="form-control" id="txtUserName" placeholder="User Name" msg-value="user name" required>
+                                    <span id="errtxtUserName" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Password : <em class="text-danger">*</em> </label>
+                                    <input type="password" class="form-control" id="txtPassword" placeholder="Password" msg-value="password" required>
+                                    <span id="errtxtPassword" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="form-group">
+                                    <label>Role :  <em class="text-danger">*</em></label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Role" value="1" />
+                                        Role1
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Role" value="2" />
+                                        Role2
+                                    </label>
+                                    <span id="errtxtRole" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label>Short Description :  </label>
+                                    <textarea placeholder="Description" class="form-control" id="txtDescription" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

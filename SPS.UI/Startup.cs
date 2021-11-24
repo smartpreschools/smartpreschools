@@ -4,10 +4,13 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+
 
 namespace SPS.UI
 {
@@ -24,8 +27,13 @@ namespace SPS.UI
         public void ConfigureServices(IServiceCollection services)
         {
             var connectionString = Configuration.GetConnectionString("CompanyDB");
-         
+
             services.AddControllersWithViews();
+            services.AddMvc()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.WriteIndented = true;
+    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,11 +59,11 @@ namespace SPS.UI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapAreaControllerRoute(
-                    name: "ProductOwner",
-                    areaName: "ProductOwner",
-                    pattern: "ProductOwner/{controller=Dashboard}/{action=Index}/{id?}");
+                    name: "ProductAdmin",
+                    areaName: "ProductAdmin",
+                    pattern: "ProductAdmin/{controller=Dashboard}/{action=Index}/{id?}");
 
-                
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Auth}/{action=Login}/{id?}");

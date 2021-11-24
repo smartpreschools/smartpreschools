@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewData["Title"] = "State";
+    Layout = "~/Areas/ProductAdmin/Views/Shared/_ProductOwner.cshtml";
+}
+<br />
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title"> Add State</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Select Country <em class="text-danger">*</em></label>
+                            <select class="form-control" id="ddlCountry" msg-value="country" required>
+                            </select>
+                            <span id="errddlCountry" class="hidden-span text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">State Name :  <em class="text-danger">*</em>  </label>
+                            <input type="text" class="form-control" id="txtStateName" placeholder="State Name" msg-value="state name" required>
+                            <span id="errtxtStateName" class="hidden-span text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Description : </label>
+                            <textarea class="form-control" rows="3" placeholder="Enter ..." maxlength="250" id="txtStateDesc"></textarea>
+                        </div>
+                        <div>
+                            <label>Status</label>
+                            <select class="form-control" id="ddlStateStatus">
+                                <option value="true">Active</option>
+                                <option value="false">InActive</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <input type="hidden" id="hdnStateID">
+                        <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                        <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">State List</h3>
+                    </div>
+                    <div class="card-body">
+                        <table id="statelist" class="table table-bordered" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>Country</th>
+                                    <th>State Name</th>
+                                    <th>State Description</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="~/js/ProductOwner/State.js"></script>

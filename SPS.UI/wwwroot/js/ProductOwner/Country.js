@@ -17,18 +17,17 @@
                     "bDestroy": true,
                     "lengthMenu": [[5, 10, 25, -1], [5, 10, 25, "All"]],
                     columns: [
-                        { data: 'CountryName' },
-                        { data: 'CountryDesc' },
+                        { data: 'countryName' },
+                        { data: 'countryDesc' },
                         {
-                            data: "Status",
-                            data: "Status",
+                            data: "status",
                             render: function (data, type, row) {
                                 if (data === "True") { return "Active" }
                                 else return "InActive"
                             }
                         },
                         {
-                            "data": "CountryID",
+                            "data": "countryId",
                             "searchable": false,
                             "sortable": false,
                             "render": function (data, type, full, meta) {
@@ -40,8 +39,8 @@
             }
         }
 
-        var url = '/ProductAdmin/Master/GetCountryList/';
-        CommonUtility.RequestAjax('POST', url, "", BindCountrySuccess, null, null, null);
+        var url = '/ProductAdmin/MasterData/GetCountryList/';
+        CommonUtility.RequestAjax('GET', url, "", BindCountrySuccess, null, null, null);
     }
     //#endregion
 
@@ -53,9 +52,9 @@
         var countryStatus = $("#ddlCountryStatus").val();
         if (countryName != "") {
             if (countryID != "")
-                UpdateCountry(countryName, countryName, countryStatus, countryID);
+                UpdateCountry(countryName, countryDesc, countryStatus, countryID);
             else
-                AddCountry(countryName, countryName, countryStatus);
+                AddCountry(countryName, countryDesc, countryStatus);
         }
         else {
             CommonValidation.MandetoryControlValueCheck("TEXTBOX", "txtCountryName");
@@ -79,7 +78,7 @@
             CountryDesc: countryDesc,
             Status: countryStatus
         };
-        var url = '/ProductAdmin/Master/Country/';
+        var url = '/ProductAdmin/MasterData/AddCountry/';
         CommonUtility.RequestAjax('POST', url, data, CountrySuccess, null, null, null);
     }
 
@@ -98,7 +97,7 @@
             CountryDesc: countryDesc,
             Status: countryStatus
         };
-        var url = '/ProductAdmin/Master/UpdateCountry/';
+        var url = '/ProductAdmin/MasterData/UpdateCountry/';
         CommonUtility.RequestAjax('POST', url, data, CountrySuccess, null, null, null);
     }
     //#endregion
@@ -143,9 +142,9 @@
             }
         }
         var data = {
-            CountryID: countryID
+            countryId: countryID
         };
-        var url = '/ProductAdmin/Master/DeleteCountry/';
+        var url = '/ProductAdmin/MasterData/DeleteCountry/';
         CommonUtility.RequestAjax('POST', url, data, CountrySuccess, null, null, null);
     }
     //#endregion
@@ -155,17 +154,17 @@
         var countryID = $(this).attr('data-value');
         var BindCountrySuccess = function (result) {
             if (result != "" || result.length >= 0) {
-                $("#txtCountryName").val(result.CountryName);
-                $("#txtCountryDesc").val(result.CountryDesc);
-                $("#ddlCountryStatus").val(result.Status);
-                $("#hdnCountryID").val(result.CountryID);
+                $("#txtCountryName").val(result.countryName);
+                $("#txtCountryDesc").val(result.countryDesc);
+                $("#ddlCountryStatus").val(result.status);
+                $("#hdnCountryID").val(result.countryId);
             }
         }
         var data = {
-            CountryID: countryID
+            countryId: countryID
         };
-        var url = '/ProductAdmin/Master/GetCountryByID/';
-        CommonUtility.RequestAjax('GET', url, data, BindCountrySuccess, null, null, null);
+        var url = '/ProductAdmin/MasterData/GetCountryByID/';
+        CommonUtility.RequestAjax('POST', url, data, BindCountrySuccess, null, null, null);
     });
     //#endregion
 

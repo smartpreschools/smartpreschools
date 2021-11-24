@@ -16,6 +16,6 @@ namespace SPS.CommonModel.Model.ProductOwner
 
         public int CountryId { get; set; }
         [MaxLength(500, ErrorMessage = "Please enter 500 char only.")]
-        public string CountryDescription { get; set; }
+        public string CountryDesc { get; set; }
     }
 }

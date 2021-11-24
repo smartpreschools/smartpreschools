@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewData["Title"] = "PlanDetails";
+    Layout = "~/Areas/ProductAdmin/Views/Shared/_ProductOwner.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Plan Details</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Plan Name : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtPlanName" placeholder="Plan Name" msg-value="plan name" required>
+                                    <span id="errtxtPlanName" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Plan Cost : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtPlanCost" placeholder="Plan Cost" msg-value="plan cost" required>
+                                    <span id="errtxtPlanCost" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Plan Validity : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtPlanValidity" placeholder="Plan Validity" msg-value="plan validity" required>
+                                    <span id="errtxtPlanValidity" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Offer Cost : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtOfferCost" placeholder="Offer Cost" msg-value="offer cost" required>
+                                    <span id="errtxtOfferCost" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Offer Period : <em class="text-danger">*</em> </label>
+                                    <br />
+                                    <label>Start Date:</label>
+                                    <input type="date" id="txtOfferPeriod" name=""><br />
+                                    <label>End Date:</label>
+                                    <input type="date" id="txtOfferPeriod" name="">
+                                    <span id="errtxtOfferPeriod" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Without Offer Cost : <em class="text-danger">*</em> </label>
+                                    <input type="text" class="form-control" id="txtWithoutOfferCost" placeholder="Without Offer Cost" msg-value="without offer cost" required>
+                                    <span id="errtxtWithoutOfferCost" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Is Offer Live : <em class="text-danger">*</em> </label>
+                                    <br />
+                                    <input type="radio" id="yes" name="" value="">
+                                    <label>Yes</label>
+                                    <input type="radio" id="no" name="" value="">
+                                    <label>No</label>
+                                    <span id="errtxtIsOfferLive" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Module List :  <em class="text-danger">*</em></label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="SMS" value="1" />
+                                        SMS
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Add Blog" value="2" />
+                                        Add Blog
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Add Photo" value="3" />
+                                        Add Photo
+                                    </label>
+                                    <span id="errtxtModuleList" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Status :  <em class="text-danger">*</em> </label>
+                                    <select id="ddlStatus" class="form-control" required>
+                                        <option value="">Select</option>
+                                        <option value="active">Active</option>
+                                        <option value="inactive">Inactive</option>
+                                    </select>
+                                    <span id="errddlStatus" class="hidden-span text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-group">
+                                    <label>Description :  </label>
+                                    <textarea placeholder="Description" class="form-control" id="txtDescription" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>                         
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-info" id="btnSubmit">Submit</button>
+                            <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

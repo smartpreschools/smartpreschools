@@ -92,7 +92,7 @@ namespace SPS.DataLogicLayer
         #endregion
         public static SqlConnection GetConnection(string connectionName)
         {
-            SqlConnection cn = new SqlConnection("Server=192.168.0.105;Initial Catalog=SmartPreSchool; User ID=sa;Password=sa123;Integrated Security=false;");
+            SqlConnection cn = new SqlConnection("Server=192.168.0.108;Initial Catalog=SmartPreSchool; User ID=sa;Password=sa123;Integrated Security=false;");
             cn.Open();
             return cn;
         }

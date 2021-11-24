@@ -12,6 +12,6 @@ namespace SPS.CommonModel.Model
         public DateTime CreatedOn { get; set; }
         public Guid ModifiedBy { get; set; }
         public DateTime ModifiedOn { get; set; }
-        public Boolean Status { get; set; } 
+        public string Status { get; set; } 
     }
 }

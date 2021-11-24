@@ -17,15 +17,61 @@ namespace SPS.BusinessLogicLayer.ProductOwner
             countryDLLObj = new CountryDLL();
         }
 
-        /// <summary>
-
-        /// </summary>
-        /// <param name="countryModel"></param>
-        /// <returns></returns>
+        
         public int AddCountry(CountryModel countryModel)
         {
-            //Business Logic implentation
-            return countryDLLObj.AddCountry(countryModel);
+            try
+            {
+                return countryDLLObj.AddCountry(countryModel);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<CountryModel> GetCountryList()
+        {
+            try
+            {
+                return countryDLLObj.GetCountryList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public int UpdateCountry(CountryModel countryModel)
+        {
+            try
+            {
+                return countryDLLObj.UpdateCountry(countryModel);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public CountryModel GetCountryByID(string countryId)
+        {
+            try
+            {
+                return countryDLLObj.GetCountryByID(countryId);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public int DeleteCountry(String countryId)
+        {
+            try
+            {
+                return countryDLLObj.DeleteCountry(countryId);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

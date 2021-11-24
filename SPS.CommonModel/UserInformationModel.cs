@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SPS.CommonModel
 {
-    public class UserInformationModel
+    public static class UserInformationModel
     {
-        public string UserId { get; set; }
-        public string SchoolName { get; set; }
-        public string Role { get; set; }
+        public static string UserId { get; set; }
+        public static string SchoolName { get; set; }
+        public static string Role { get; set; }
     }
 }
